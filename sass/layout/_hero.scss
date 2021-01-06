@@ -1,0 +1,42 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  background-color: var(--bcg-hero);
+  background-image: linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url("../images/studio/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  color: var(--primary-white-color);
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  @include button;
+  padding: 10px 32px;
+
+  &:hover,
+  &:focus {
+    background-color: #0e86e8;
+  }
+}
