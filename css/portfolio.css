@@ -108,6 +108,46 @@ a {
   letter-spacing: 0.03em;
 }
 
+.menu-container {
+  display: none;
+  position: absolute;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-white-color);
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.icon-menu {
+  display: block;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .button {
   display: inline-block;
   color: var(--primary-text-color);
