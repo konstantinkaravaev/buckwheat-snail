@@ -39,10 +39,27 @@
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -206,6 +223,7 @@ a {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -213,6 +231,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-nav {
@@ -227,6 +251,8 @@ a {
 .nav-logo {
   margin-right: 93px;
   color: var(--black-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav-logo span {

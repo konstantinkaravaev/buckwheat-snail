@@ -20,43 +20,61 @@
   <body>
     <header class="header">
       <div class="container nav-wrapper">
-        <nav class="main-nav">
-          <!-- Добавлен <span> для дальнейшей стилизации цветом -->
-          <a href="./index.html" lang="en" class="logo nav-logo link"
-            ><span>Web</span>Studio</a
-          >
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link current"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <a href="./index.html" lang="en" class="logo nav-logo link"
+          ><span>Web</span>Studio</a
+        >
+        <div class="menu-container">
+          <nav class="main-nav">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <address class="nav-contacts">
-          <a class="nav-contacts__title" href="mailto:info@devstudio.com">
-            <svg class="contacts-icon" width="16px" height="12px">
-              <use href="./images/icons/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
+          <address class="nav-contacts">
+            <a class="nav-contacts__title" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon" width="16px" height="12px">
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
 
-          <a class="nav-contacts__title" href="tel:+380961111111">
-            <svg class="contacts-icon" width="10px" height="16px">
-              <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
+            <a class="nav-contacts__title" href="tel:+380961111111">
+              <svg class="contacts-icon" width="10px" height="16px">
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </address>
+        </div>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
           >
-        </address>
+            <use
+              class="icon-menu"
+              href="./images/icons/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/icons/sprite.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -205,9 +223,9 @@
                 "
                 src="./images/studio/team/img-1-450.jpg"
                 sizes="
-                (min-width: 1200px) 25vw, 
-                (min-width: 768px) 50vw, 
-                (min-width: 480px) 100vw
+                (min-width: 1200px) 270px, 
+                (min-width: 768px)  354px, 
+                (min-width: 480px)  450px
                 "
                 alt="Фотография Игоря Демьяненко"
               />
@@ -256,17 +274,17 @@
             </li>
             <li class="team-list__item">
               <img
-              class="team-list__image"
-              srcset="
-                ./images/studio/team/img-2-450.jpg   450w,
-                ./images/studio/team/img-2-900.jpg   900w,
-                ./images/studio/team/img-2-1350.jpg 1350w
-              "
-              src="./images/studio/team/img-2-450.jpg"
-              sizes="
-              (min-width: 1200px) 25vw, 
-              (min-width: 768px) 50vw, 
-              (min-width: 480px) 100vw
+                class="team-list__image"
+                srcset="
+                  ./images/studio/team/img-2-450.jpg   450w,
+                  ./images/studio/team/img-2-900.jpg   900w,
+                  ./images/studio/team/img-2-1350.jpg 1350w
+                "
+                src="./images/studio/team/img-2-450.jpg"
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px
               "
                 alt="Фотография Ольги Репиной"
               />
@@ -315,17 +333,17 @@
             </li>
             <li class="team-list__item">
               <img
-              class="team-list__image"
-              srcset="
-                ./images/studio/team/img-3-450.jpg   450w,
-                ./images/studio/team/img-3-900.jpg   900w,
-                ./images/studio/team/img-3-1350.jpg 1350w
-              "
-              src="./images/studio/team/img-3-450.jpg"
-              sizes="
-              (min-width: 1200px) 25vw, 
-              (min-width: 768px) 50vw, 
-              (min-width: 480px) 100vw
+                class="team-list__image"
+                srcset="
+                  ./images/studio/team/img-3-450.jpg   450w,
+                  ./images/studio/team/img-3-900.jpg   900w,
+                  ./images/studio/team/img-3-1350.jpg 1350w
+                "
+                src="./images/studio/team/img-3-450.jpg"
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px
               "
                 alt="Фотография Николая Тарасова"
               />
@@ -374,17 +392,17 @@
             </li>
             <li class="team-list__item">
               <img
-              class="team-list__image"
-              srcset="
-                ./images/studio/team/img-4-450.jpg   450w,
-                ./images/studio/team/img-4-900.jpg   900w,
-                ./images/studio/team/img-4-1350.jpg 1350w
-              "
-              src="./images/studio/team/img-4-450.jpg"
-              sizes="
-              (min-width: 1200px) 25vw, 
-              (min-width: 768px) 50vw, 
-              (min-width: 480px) 100vw
+                class="team-list__image"
+                srcset="
+                  ./images/studio/team/img-4-450.jpg   450w,
+                  ./images/studio/team/img-4-900.jpg   900w,
+                  ./images/studio/team/img-4-1350.jpg 1350w
+                "
+                src="./images/studio/team/img-4-450.jpg"
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px
               "
                 alt="Фотография Михаила Ермакова"
               />
@@ -436,7 +454,7 @@
       </section>
 
       <!-- Секция наши клиенты -->
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -484,12 +502,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-wrapper container">
         <div class="footer__left-side">
-          <!-- Добавлен <span> для дальнейшей стилизации цветом -->
           <a href="./index.html" lang="en" class="logo footer-logo link"
             ><span>Web</span>Studio</a
           >
@@ -562,7 +579,7 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -651,6 +668,7 @@
       </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
   </body>
