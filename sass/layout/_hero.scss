@@ -1,17 +1,34 @@
-.hero{
-    background-image: url(../../images/hero/hero-mobile.jpg);
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  text-align: center;
+
+  background-image: url("../../images/hero/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  //   background-size: cover;
 }
 
+.hero__title {
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 
+.hero__button {
+  @include button;
+}
 
 // .hero {
 //   max-width: 1600px;
 //   height: 600px;
-
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
 
 //   text-align: center;
 

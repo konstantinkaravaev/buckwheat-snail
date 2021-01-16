@@ -177,6 +177,7 @@ a {
 
 .button {
   display: inline-block;
+  padding: 10px 32px;
   color: var(--primary-text-color);
   background-color: var(--second-bg-color);
   font-family: inherit;
@@ -743,6 +744,10 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .nav-logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .main-nav {
     margin-bottom: 60px;
   }
@@ -820,7 +825,42 @@ a {
 }
 
 .hero {
-  background-image: url(../../images/hero/hero-mobile.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: url("../../images/hero/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  min-width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing);
+          transition-timing-function: var(--timing);
 }
 
 .features {
