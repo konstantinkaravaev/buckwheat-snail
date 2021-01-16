@@ -779,8 +779,6 @@ a {
   }
   .nav-contacts {
     margin-left: 84px;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -790,6 +788,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .nav-contacts__title {
     font-size: 12px;
@@ -807,62 +807,16 @@ a {
   .nav-contacts {
     margin-left: 305px;
   }
+  .nav-contacts__title {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .nav-contacts__title:not(:last-child) {
     margin-right: 30px;
   }
   .contacts-icon {
     margin-right: 10px;
   }
-}
-
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: var(--bcg-hero);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/studio/banner.jpg");
-  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/studio/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero__title {
-  color: var(--primary-white-color);
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero__button {
-  min-width: 200px;
-  height: 50px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing);
-          transition-timing-function: var(--timing);
-  padding: 10px 32px;
-}
-
-.hero__button:hover, .hero__button:focus {
-  background-color: #0e86e8;
 }
 
 .features {

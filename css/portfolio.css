@@ -480,8 +480,6 @@ a {
   }
   .nav-contacts {
     margin-left: 84px;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -491,6 +489,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .nav-contacts__title {
     font-size: 12px;
@@ -507,6 +507,10 @@ a {
   }
   .nav-contacts {
     margin-left: 305px;
+  }
+  .nav-contacts__title {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .nav-contacts__title:not(:last-child) {
     margin-right: 30px;
