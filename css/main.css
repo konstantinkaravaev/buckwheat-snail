@@ -832,6 +832,7 @@ a {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero-mobile.jpg");
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-mobile.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
