@@ -10,7 +10,7 @@
       var(--gradient-color),
       var(--gradient-color)
     ),
-    url("../images/hero/hero-mobile.jpg");
+    url("./../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
@@ -39,7 +39,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/hero-mobile@2x.jpg");
+      url("./../images/hero/hero-mobile@2x.jpeg");
   }
 }
 
@@ -51,7 +51,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/hero-mobile@3x.jpg");
+      url("./../images/hero/hero-mobile@3x.jpeg");
   }
 }
 
