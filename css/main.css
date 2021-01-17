@@ -9,7 +9,6 @@
   --accent-color: #2196f3;
   --black-color: #000000;
   --bcg-hero: #c4c4c4;
-  --gradient-color: rgba(47, 48, 58, 0.4);
   --clients-logo: #afb1b8;
   --works-list-border: #eeeeee;
   --timing: cubic-bezier(0.4, 0, 0.2, 1);
@@ -830,8 +829,8 @@ a {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mobile.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
