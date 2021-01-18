@@ -172,7 +172,7 @@
 
   .footer__right-side {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 
   .footer-social {
@@ -192,17 +192,3 @@
     width: 358px;
   }
 }
-// .footer-wrapper {
-//   display: flex;
-//   align-items: baseline;
-//   /* justify-content: space-between; */
-// }
-
-// .footer__left-side {
-//   margin-right: 85px;
-// }
-
-// .footer-contacts {
-//   display: flex;
-//   flex-direction: column;
-// }
