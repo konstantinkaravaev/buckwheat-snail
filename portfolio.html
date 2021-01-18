@@ -336,7 +336,6 @@
     <footer class="footer">
       <div class="footer-wrapper container">
         <div class="footer__left-side">
-          <!-- Добавлен <span> для дальнейшей стилизации цветом -->
           <a href="./index.html" lang="en" class="logo footer-logo link"
             ><span>Web</span>Studio</a
           >
@@ -353,61 +352,63 @@
           </address>
         </div>
 
-        <div class="footer-social">
-          <p class="footer-social__description">присоединяйтесь</p>
-          <ul class="footer-social-list list">
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__link" href="">
-                <svg class="footer-social-list__icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__link" href="">
-                <svg class="footer-social-list__icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__link" href="">
-                <svg class="footer-social-list__icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__link" href="">
-                <svg class="footer-social-list__icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <form action="" class="footer-form js-speaker-form">
-          <div class="footer-form__form-field">
-            <label class="footer-form__label" for="subscribe"
-              >Подпишитесь на рассылку</label
-            >
-            <input
-              class="footer-form__input"
-              type="email"
-              name="subscribe"
-              id="subscribe"
-              placeholder="E-mail"
-            />
+        <div class="footer__right-side">
+          <div class="footer-social">
+            <p class="footer-social__description">присоединяйтесь</p>
+            <ul class="footer-social-list list">
+              <li class="footer-social-list__item">
+                <a class="footer-social-list__link" href="">
+                  <svg class="footer-social-list__icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list__item">
+                <a class="footer-social-list__link" href="">
+                  <svg class="footer-social-list__icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list__item">
+                <a class="footer-social-list__link" href="">
+                  <svg class="footer-social-list__icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list__item">
+                <a class="footer-social-list__link" href="">
+                  <svg class="footer-social-list__icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <button type="submit" class="button footer-form__button">
-            Подписаться
-            <svg class="footer-form__icon" width="24" height="24">
-              <use href="./images/icons/sprite.svg#form-send"></use>
-            </svg>
-          </button>
-        </form>
+  
+          <form action="" class="footer-form js-speaker-form">
+            <div class="footer-form__form-field">
+              <label class="footer-form__label" for="subscribe"
+                >Подпишитесь на рассылку</label
+              >
+              <input
+                class="footer-form__input"
+                type="email"
+                name="subscribe"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </div>
+  
+            <button type="submit" class="button footer-form__button">
+              Подписаться
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#form-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/menu.js"></script>

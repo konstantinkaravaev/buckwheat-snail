@@ -694,16 +694,6 @@ a {
   color: var(--accent-color);
 }
 
-.footer-wrapper {
-  text-align: center;
-}
-
-.footer-class {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer-address {
   margin-bottom: 8px;
   color: var(--primary-white-color);
@@ -758,9 +748,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer-form__label {
@@ -856,30 +843,12 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .footer-class {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .footer-form__input {
     width: 100%;
-  }
-  .footer__left-side {
-    margin-bottom: 60px;
-  }
-  .footer-social {
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-class {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .footer-form {
     margin-top: 60px;
   }
@@ -889,8 +858,22 @@ a {
 }
 
 @media screen and (max-width: 1199px) {
+  .footer-wrapper {
+    text-align: center;
+  }
+  .footer__left-side {
+    margin-bottom: 60px;
+  }
+  .footer-social {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer-form__form-field {
     margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -903,16 +886,16 @@ a {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-  .footer-class {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .footer__left-side {
+    margin-right: 85px;
+  }
+  .footer__right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .footer__left-side {
-    margin-right: 85px;
   }
   .footer-social {
     margin-right: 93px;
