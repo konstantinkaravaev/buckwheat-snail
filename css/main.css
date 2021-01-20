@@ -150,6 +150,20 @@ a {
   padding: 0;
   border: 0;
   background-color: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing);
+          transition-timing-function: var(--timing);
+}
+
+.menu-button:hover, .menu-button:focus {
+  color: var(--accent-color);
+}
+
+.menu-button__icon {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
