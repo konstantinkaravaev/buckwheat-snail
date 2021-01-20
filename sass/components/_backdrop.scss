@@ -37,76 +37,6 @@
   transition-delay: 150ms;
 }
 
-/* ====== FORM ====== */
-
-.form-title {
-  margin-bottom: 12px;
-
-  color: var(--primary-text-color);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 10px;
-}
-
-.label-description {
-  color: var(--title-text-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.171;
-  letter-spacing: 0.01em;
-}
-
-.form-field label {
-  margin-bottom: 4px;
-}
-
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 93px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding-top: 208px;
-    padding-bottom: 207px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .backdrop {
-    padding-right: 159px;
-    padding-left: 159px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .form-title {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    padding-top: 221px;
-    padding-bottom: 222px;
-  }
-
-  .form-title {
-    line-height: 1.172;
-  }
-}
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -149,6 +79,36 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+/* ====== FORM ====== */
+
+.form-title {
+  margin-bottom: 12px;
+
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.label-description {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.171;
+  letter-spacing: 0.01em;
+}
+
+.form-field label {
+  margin-bottom: 4px;
 }
 
 .modal-form__input-wrapper {
@@ -259,14 +219,12 @@
 }
 
 .policy-link {
-  // white-space: nowrap;
   color: var(--accent-color);
   text-decoration: underline;
-margin-left: 3px;
+  margin-left: 3px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.171;
-  
 }
 
 .button-submit {
@@ -298,4 +256,62 @@ margin-left: 3px;
   background-color: #0e86e8;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 208px;
+    padding-bottom: 207px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backdrop {
+    padding-right: 159px;
+    padding-left: 159px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding-top: 221px;
+    padding-bottom: 222px;
+  }
+
+  .modal{
+    min-width: 528px;
+  }
+
+  .form-title {
+    line-height: 1.172;
+  }
+
+  .modal-form__label-policy::before{
+    margin-right: 8.38px;
+  }
+
+  .policy label{
+    font-size: 14px;
+    line-height: 1.714;
+  }
+
+  .policy-link{
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
